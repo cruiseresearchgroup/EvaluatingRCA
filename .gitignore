@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.Python
+build/
+dist/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Data — never commit raw datasets
+method/datasets/wadi/*.csv
+method/datasets/wadi/*.xlsx
+method/datasets/swat/SWaT.A1*/
+method/datasets/swat/*.pdf
+method/datasets/hvac/LBNL_FDD_Data_Sets_RTU/
+method/datasets/rcaeval/RE1-OB/
+method/datasets/rcaeval/RE1-SS/
+method/datasets/rcaeval/RE1-TT/
+method/datasets/rcaeval/RE2-*/
+method/datasets/rcaeval/RE3-*/
+
+# Fresh runner outputs (the `results_reference/` copy is the audit trail)
+method/results/
+
+# Per-dataset derived caches — regenerable from raw data; not committed
+method/datasets/*/graph_cache_per_scenario/
+method/datasets/*/llm_rca_cache_*/
+
+_archive/

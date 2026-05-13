@@ -1,0 +1,23 @@
+# Core
+numpy
+pandas
+scikit-learn
+scipy
+networkx
+matplotlib
+
+# Causal discovery
+causal-learn        # PC, FCI (used by graph-based baselines)
+
+# RCA baselines
+pyrca               # RCD, ε-Diagnosis (BARO is implemented directly in method/algorithms/rca/baro.py)
+baro                # drop_constant utility used by baro adapter
+scikit-network      # PageRank
+
+# CIRCA (graph-based baseline)
+circa @ git+https://github.com/NetManAIOps/CIRCA.git
+
+# LLM stack
+openai              # Groq endpoint speaks the OpenAI API
+langfuse            # Per-call trace logging in run_llm_balanced.py
+python-dotenv
